@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 130px 20px 0px;
+}
+.header{
+    background-color: rgb(255, 255, 255);
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.banner{
+    background-color:#4da6ff;
+    height:30px;
+    width: 100%;
+    padding:5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.orden, .contacto, .redes{
+padding-left: 20px;
+padding-right: 20px;
+align-items: center;
+display:flex;
+max-width: 992px;
+margin: 0 auto;
+}
+
+.banner p{
+    color:#f0f0f0;
+    font-size:xx-small;
+    font-weight:bold;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.redes a{
+    padding-right: 6px;
+    padding-bottom: 5px;
+}
+.fa-regular, .fa-solid, .fa-brands{
+    color: #f0f0f0;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.logo-img{
+    height: 90px;
+
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 90px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link{
+    border: 3px;
+    color:#47B2F3;
+}
+
+.nav-menu-link:hover{
+    transition: 0.5s;;
+    
+}
+.nav-menu-link-active{
+
+}
+
+.nav-toggle{
+    background:none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+.hero{
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 992px;
+    margin: 0 auto;
+
+}
+.container-tittle{
+}
+
+.sobre-nosotros-tittle{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    color: #47B2F3;
+    text-align: center;
+}
+
+.about-us{
+    font-size: 1.1em;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+}
+.about-us2{
+    font-size: 16px;
+    font-weight: bold;
+    color: #47B2F3;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+.sobre-nosotros-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-nosotros-logo .logo{
+    height: 50px;
+}
+
+
+
+
+
+
+@media (max-width:768px){
+    body {
+        padding-top: 90px;
+    }
+    .header{
+        height: 80px;
+    }
+    
+    .banner{
+        height:30px;
+        width: 100%;
+        padding:5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-img{
+        height: 50px;
+
+
+    }
+    
+    .orden, .contacto, .redes{
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    display:flex;
+    max-width: 992px;
+    margin: 0 auto;
+    }
+    
+    .banner p{
+        color:#f0f0f0;
+        font-size:xx-small;
+        font-weight:bold;
+        margin: 0;
+        padding-right: 10px;
+    }
+    
+    .redes a{
+        padding-right: 6px;
+        padding-bottom: 5px;
+    }
+
+    
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: rgba(77, 166, 255, 0.7);
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 15px 0;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-menu-item{
+        line-height: 35px;
+
+    }
+    .nav-link{
+        font-weight: bold;
+        line-height: 30px;
+    }
+    
+    .nav-menu-link:hover{
+        color: rgb(163, 192, 208);
+    }
+    .nav-menu-link-active{
+        color: white;
+
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .fa-solid{
+        color: #47B2F3;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+        
+    }
+    .nav.toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+}
